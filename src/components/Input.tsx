@@ -1,8 +1,8 @@
 import React from "react";
 
 interface InputProps {
-  label: string;
-  name: string;
+  label?: string;
+  name?: string;
   type: string;
   className: string;
   inputClassName?: string;
