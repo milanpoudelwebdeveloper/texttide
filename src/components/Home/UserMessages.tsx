@@ -1,5 +1,4 @@
 import React from "react";
-import Input from "../Input";
 
 const UserMessages = () => {
   return (
@@ -31,15 +30,13 @@ const UserMessages = () => {
         </div>
       </div>
       <div className="p-14 w-full flex items-center">
-        <Input
-          type="text"
-          label=""
-          isRequired
-          placeholder="Type a message..."
-          value=""
-          className="w-[75%]"
-          inputClassName="p-4 border-0 shadow-md rounded-full bg-light focus:ring-0 focus:border-0 outline-none"
-        />
+        <div className="w-[75%]">
+          <input
+            type="text"
+            className={` shadow-md focus:ring-0 focus:border-0 outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-6`}
+            placeholder="Type a message..."
+          />
+        </div>
         <div className={`ml-4 p-2 cursor-pointer bg-light rounded-full`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
